@@ -57,6 +57,84 @@
 
 @media(max-width:760px){.wrap{width:min(100% - 28px,540px)}.header{height:68px}.brand strong{font-size:16px}.nav{display:none;position:absolute;top:112px;left:0;right:0;background:#fbf9f4;z-index:10;padding:22px;flex-direction:column;border-bottom:1px solid var(--line)}.nav.open{display:flex}.menu{display:block}.hero{padding:43px 0 45px}.hero-grid{grid-template-columns:1fr;gap:24px}.hero h1{font-size:44px}.hero p{font-size:14px}.hero-visual{min-height:350px}.plaque{width:225px}.benefit-row{grid-template-columns:1fr}.benefit{border-right:0;border-bottom:1px solid var(--line);padding:16px 10px}.benefit:last-child{border-bottom:0}.section{padding:55px 0}.builder-grid{grid-template-columns:1fr}.panel{padding:21px}.preview-panel{position:relative;top:auto;grid-row:1}.preview-scene{min-height:360px}.preview-plaque{width:220px}.how-grid{grid-template-columns:1fr;gap:12px}.cta-inner{align-items:flex-start;flex-direction:column}.cta-band h2{font-size:30px}.footer-row{align-items:flex-start;flex-direction:column}.hero-label{right:0}.trust{gap:10px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+
+/* Nova composição: cenário fotográfico e configurador alinhado lado a lado */
+:root{--ink:#17231f;--muted:#727b78;--cream:#f5f4f0;--paper:#fff;--olive:#193c34;--line:#e1e5e1;--gold:#d5a33a}
+body{background:#f5f4f0;color:var(--ink)}
+.announcement{display:none}
+.header{height:76px;background:#10171b;border-bottom:1px solid #263137;color:#fff}
+.header .brand{color:#fff}.brand-mark{border-color:#d5a33a;color:#e3b54e}
+.brand strong{font-family:Inter,system-ui,sans-serif;font-size:17px;font-weight:750;letter-spacing:-.03em}
+.brand small{color:#b8c1c2;letter-spacing:.16em}
+.nav a{color:#e0e5e5}.nav .nav-cta,.btn{background:#159b66;color:white;border-radius:7px}
+.nav .nav-cta:hover,.btn:hover{background:#087a50}
+.hero{padding:0;background:#10171b;color:#fff}
+.hero-grid{grid-template-columns:1fr 1fr;gap:0;min-height:580px}
+.hero-grid>div:first-child{padding:64px 35px 64px 0}
+.hero h1{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.045em;font-size:clamp(38px,4.2vw,58px);line-height:1.04}
+.hero h1 em{color:#e9b43c;font-style:normal;font-weight:800}
+.hero p{color:#c3cdce}
+.hero .eyebrow{color:#efbb45}
+.hero .eyebrow:before{background:#efbb45}
+.hero .text-link{color:#e5e9e9;border-color:#788181}
+.hero .trust{color:#d3dada}
+.hero .tick{color:#efbb45}
+.hero .btn{background:#e2a925;color:#141b1d}
+.hero-visual{min-height:580px;margin-right:calc((min(1160px,100vw - 40px) - 100vw)/2);background:#49372a url('https://images.bizbuysell.com/shared/listings/251/2517534/aa654464-7f0c-4423-bacc-d4ab0a294f7a-W768.webp') center/cover no-repeat;overflow:hidden}
+.hero-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,19,21,.12),rgba(13,19,21,.02))}
+.hero-visual .plant,.hero-visual .counter,.hero-visual .sunlight{display:none}
+.hero-visual .plaque{width:min(300px,61%);transform:none;border:5px solid #ffffffb5;border-radius:7px;background:linear-gradient(120deg,#ffffff80,#ffffff28 40%,#ffffff58);box-shadow:0 24px 42px #10101065,inset 0 0 0 1px #fff9;backdrop-filter:blur(1px);color:#29372e}
+.hero-visual .stand{bottom:calc(50% - 180px);width:min(300px,61%);height:20px;background:#ffffff8a;border:3px solid #ffffffb5}
+.hero-label{bottom:28px;right:24px;background:#fff;color:#18221f;border-radius:4px}
+.benefits{background:#10171b;border-color:#293238;color:#fff}
+.benefit{border-color:#293238}.benefit-icon{border-color:#e1ad37;color:#e1ad37}.benefit strong{font-family:Inter,system-ui,sans-serif;font-size:13px;font-weight:700}.benefit small{color:#aeb8ba}
+.section.builder{padding:52px 0 62px;background:#f4f5f4}
+.builder .section-head{text-align:left;max-width:none;margin:0 0 26px}
+.builder .section-head .eyebrow{justify-content:flex-start;color:#b8861f}
+.builder .section-head .eyebrow:before{background:#b8861f}
+.builder .section-head h2{font-family:Inter,system-ui,sans-serif;font-size:clamp(29px,3.4vw,42px);font-weight:800;letter-spacing:-.035em;margin:10px 0}
+.builder .section-head p{max-width:650px}
+.builder-grid{grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);gap:24px;align-items:start}
+.builder-grid>.panel:first-child{grid-column:2;grid-row:1;background:#fff;border:1px solid #e0e5e2;border-radius:12px;padding:25px;box-shadow:0 8px 26px #10251b0b}
+.builder-grid>.preview-panel{grid-column:1;grid-row:1;position:relative;top:auto;border:0;border-radius:12px;background:#fff;box-shadow:0 8px 26px #10251b0b}
+.builder-grid>.panel:first-child h3{font-family:Inter,system-ui,sans-serif;font-size:20px;font-weight:750}
+.builder-grid>.panel:first-child .panel-intro{border-bottom:1px solid #e9ece9;color:#727b78}
+.field label{font-size:12px;font-weight:700;color:#293630}
+.field input,.field select,.field textarea{border-radius:7px;border-color:#d9dfdc;background:#fbfcfb;min-height:44px}
+.colors{gap:11px}.swatch{width:34px;height:34px}
+.model-options{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.model-option{border-radius:8px;min-height:76px;border-color:#d9dfdc;background:#f8f9f8}
+.model-option[aria-pressed=true]{border:1.5px solid #193c34;background:#edf4f0;box-shadow:none}
+.preview-head{padding:17px 20px;background:#fff;border-bottom:1px solid #e6e9e7}
+.preview-head strong{font-family:Inter,system-ui,sans-serif;font-weight:750;font-size:16px}
+.preview-scene{min-height:535px;background:#554334 url('https://images.bizbuysell.com/shared/listings/251/2517534/aa654464-7f0c-4423-bacc-d4ab0a294f7a-W768.webp') center/cover no-repeat}
+.preview-scene:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(16,23,27,.05),rgba(16,23,27,.12))}
+.preview-scene .scene-window,.preview-scene .scene-plant,.preview-scene .preview-counter{display:none}
+.preview-plaque{width:min(300px,55%);aspect-ratio:.72;transform:none;border:5px solid #ffffffb5;border-radius:6px;background:linear-gradient(120deg,#ffffff7a,#ffffff22 38%,#ffffff50);box-shadow:0 22px 40px #14141465,inset 0 0 0 1px #fff9;backdrop-filter:blur(1px);padding:20px}
+.preview-plaque:after{background:linear-gradient(105deg,#ffffff45,transparent 34%,#ffffff16)}
+.preview-plaque .plaque-name{font-family:Georgia,serif;font-size:clamp(17px,2vw,25px);line-height:1.12}
+.preview-plaque .plaque-sub{font-size:9px;letter-spacing:.14em}
+.preview-plaque .stars{font-size:16px;color:#d6a02e}
+.preview-plaque .plaque-question{font-size:11px}
+.preview-plaque .qr{width:64px;height:64px}
+.preview-stand{bottom:36px;width:min(300px,55%);height:18px;border:3px solid #ffffffb5;background:#ffffff75;box-shadow:0 9px 15px #15151545}
+.preview-caption{bottom:12px;right:12px;background:#10171bbd;color:#fff;padding:6px 8px;border-radius:4px}
+.preview-footer{padding:17px 20px;border-top:1px solid #e6e9e7}
+.price{font-family:Inter,system-ui,sans-serif;font-weight:800;color:#17231f}
+.order-form{padding:0 20px 20px}
+.order-form .btn{width:100%;min-height:50px;background:#16a365;border-radius:8px;font-weight:750}
+.privacy-note{color:#7b8580}
+.how-card{border-radius:10px}.how-card h3{font-family:Inter,system-ui,sans-serif;font-weight:700}
+.cta-band{background:#193c34}.cta-band h2{font-family:Inter,system-ui,sans-serif;font-weight:750}.cta-band .btn{background:#e2a925;color:#17231f}
+.footer{background:#10171b;color:#fff}.footer .brand{color:#fff}.footer p{color:#aeb8ba}
+@media(max-width:760px){
+ .header{height:68px}.nav{top:68px;background:#10171b}.hero-grid{grid-template-columns:1fr;gap:0}.hero-grid>div:first-child{padding:42px 0 32px}.hero-visual{margin:0 calc((min(100vw - 28px,540px) - 100vw)/2);min-height:420px}
+ .hero-visual .plaque{width:220px}.hero-visual .stand{width:220px;bottom:calc(50% - 153px)}
+ .builder-grid{grid-template-columns:minmax(0,1fr);gap:16px}.builder-grid>.panel:first-child{grid-column:1;grid-row:2;padding:21px}.builder-grid>.preview-panel{grid-column:1;grid-row:1;position:relative;top:auto}
+ .preview-scene{min-height:420px}.preview-plaque{width:220px}.preview-stand{width:220px;bottom:32px}
+ .builder .section-head{text-align:center}.builder .section-head .eyebrow{justify-content:center}
+}
+
 </style>
 </head>
 <body>
